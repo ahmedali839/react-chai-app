@@ -3,9 +3,9 @@ import express from "express";
 const app = express()
 
 
-// app.get("/", (req, res) => {
-//     res.send("Server is ready jjjjjjjjjjjjjjj")
-// }) 
+app.get("/", (req, res) => {
+    res.send("Server is ready jjjjjjjjjjjjjjj")
+}) 
  
 
 app.get("/api/jokes", (req, res) => {
@@ -32,7 +32,7 @@ const jokes = [
     },
     {
         id: 5,
-        title: "This is fiv",
+        title: "This is five",
         content: "This is the five content",
     },
 ]
